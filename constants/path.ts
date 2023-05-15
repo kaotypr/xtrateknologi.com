@@ -1,5 +1,5 @@
 const WEB_PATH = {
-  home: '/',
+  index: '/',
   about: '/about',
   solutions: '/solutions',
   projects: '/projects',
