@@ -1,0 +1,8 @@
+# Ignore next build folder:
+.next
+
+# Ignore all markdown files:
+*.md
+
+# Ignore package manager lock files:
+yarn.lock
