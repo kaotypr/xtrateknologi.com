@@ -1,8 +1,7 @@
 import './globals.css'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { i18n } from '@/i18n/config'
-import { Locale } from '@/i18n/config'
+import i18n from '@/i18n'
 import { getDictionary } from '@/i18n/getDictionary'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,16 +32,16 @@ const metadata: Metadata = {
 }
 
 export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ locale }))
+  return i18n.config.locales.map((locale) => ({ locale }))
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string }
+  params: { locale: Locale }
 }) {
   try {
-    const dictionary = await getDictionary(params.locale as Locale)
+    const dictionary = await getDictionary(params.locale)
     metadata.description = dictionary.description
   } catch (error) {
     // eslint-disable-next-line no-console
@@ -56,7 +55,7 @@ export default function RootLayout({
   params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: { locale: Locale }
 }) {
   return (
     <html lang={params.locale}>
