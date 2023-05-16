@@ -1,4 +1,17 @@
 {
   "welcome": "Welcome",
-  "description": "Xtra Teknologi is a company engaged in the field of services and supply of goods for the needs of various businesses. We always provide the best solutions with extra efforts to help grow your business."
+  "description": "Xtra Teknologi is a company engaged in the field of services and supply of goods for the needs of various businesses. We always provide the best solutions with extra efforts to help grow your business.",
+  "navigation": {
+    "index": "Home",
+    "about": "About Us",
+    "solutions": "Our Solutions",
+    "projects": "Our Projects",
+    "contact": "Contact"
+  },
+  "page_index": {
+    "actions": {
+      "make_an_appointment": "Make An Appointment",
+      "learn_more_about_us": "Learn More About Us"
+    }
+  }
 }

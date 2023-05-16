@@ -1,4 +1,17 @@
 {
   "welcome": "Selamat Datang",
-  "description": "Xtra Teknologi adalah perusahaan yang bergerak pada bidang pelayanan jasa dan penyediaan barang untuk kebutuhan berbagai bisnis. Kami senantiasa memberikan solusi terbaik dengan upaya ekstra untuk membantu mengembangkan bisnis anda."
+  "description": "Xtra Teknologi adalah perusahaan yang bergerak pada bidang pelayanan jasa dan penyediaan barang untuk kebutuhan berbagai bisnis. Kami senantiasa memberikan solusi terbaik dengan upaya ekstra untuk membantu mengembangkan bisnis anda.",
+  "navigation": {
+    "index": "Beranda",
+    "about": "Tentang Kami",
+    "solutions": "Solusi Kami",
+    "projects": "Proyek Kami",
+    "contact": "Kontak"
+  },
+  "page_index": {
+    "actions": {
+      "make_an_appointment": "Hubungi Xtra Teknologi",
+      "learn_more_about_us": "Tentang Xtra Teknologi"
+    }
+  }
 }
