@@ -9,6 +9,13 @@
     "contact": "Contact"
   },
   "page_index": {
+    "sections": {
+      "founder": {
+        "title": "Xtra Solutions with Xtra Teknologi",
+        "description": "X-Technology is determined to provide IT, Business & Mechanical Electrical Solutions to meet and serve the growing market needs. We anticipate emerging market needs not only by selling products & services, but also by providing consulting & solutions, as well as establishing good relationships with clients & partners.",
+        "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra technology as your next business partner."
+      }
+    },
     "actions": {
       "make_an_appointment": "Make An Appointment",
       "learn_more_about_us": "Learn More About Us"

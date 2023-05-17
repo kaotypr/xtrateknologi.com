@@ -9,9 +9,16 @@
     "contact": "Kontak"
   },
   "page_index": {
+    "sections": {
+      "founder": {
+        "title": "Solusi Xtra dengan Xtra Teknologi",
+        "description": "X-Teknologi bertekad untuk menyediakan Solusi IT, Bisnis & Mechanical Electrical untuk memenuhi dan melayani kebutuhan pasar yang berkembang. Antisipasi kami terhadap munculnya kebutuhan pasar tidak hanya dengan menjual produk & jasa, tetapi juga dengan memberikan konsultasi & solusi, serta menjalin hubungan yang baik terhadap klien & partner.",
+        "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra technology as your next business partner."
+      }
+    },
     "actions": {
       "make_an_appointment": "Hubungi Xtra Teknologi",
-      "learn_more_about_us": "Tentang Xtra Teknologi"
+      "learn_more_about_us": "Lebih Lanjut Tetang Kami"
     }
   }
 }
