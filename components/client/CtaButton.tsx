@@ -8,7 +8,7 @@ interface ICtaButtonProps
   label: string
   variant?: 'primary' | 'secondary'
   icon?: IconType
-  href: string
+  href?: string
 }
 
 export default function CtaButton({
