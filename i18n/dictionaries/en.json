@@ -11,14 +11,53 @@
   "page_index": {
     "sections": {
       "founder": {
-        "title": "Xtra Solutions with Xtra Teknologi",
+        "title": "Xtra Solutions With Xtra Teknologi",
         "description": "X-Technology is determined to provide IT, Business & Mechanical Electrical Solutions to meet and serve the growing market needs. We anticipate emerging market needs not only by selling products & services, but also by providing consulting & solutions, as well as establishing good relationships with clients & partners.",
         "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra technology as your next business partner."
+      },
+      "solution": {
+        "title": "Xtra Teknologi Solutions"
       }
     },
     "actions": {
       "make_an_appointment": "Make An Appointment",
-      "learn_more_about_us": "Learn More About Us"
+      "learn_more_about_us": "Learn More About Us",
+      "learn_more": "Learn More",
+      "more_about_our_solutions": "See More Our Solutions"
+    }
+  },
+  "solutions": {
+    "main": {
+      "business": {
+        "title": "Business Solution",
+        "description": "Make your business more developed and advanced by utilizing our business analysis, business development strategy and business management"
+      },
+      "it": {
+        "title": "IT Solution",
+        "description": "Xtra Teknologi Dedicated to provide the best IT solutions with qualified system integration for the development of your business to a bigger stage"
+      },
+      "electrical": {
+        "title": "Electrical Solution",
+        "description": "Determined to provide the best support and solutions to solve your electrical problems for both large and small industries"
+      }
+    },
+    "it": {
+      "hardware_supply": {
+        "title": "Hardware Supply",
+        "description": ""
+      },
+      "cctv": {
+        "title": "CCTV Solution",
+        "description": ""
+      },
+      "network_security": {
+        "title": "Network Security",
+        "description": ""
+      },
+      "app_development": {
+        "title": "App Development",
+        "description": ""
+      }
     }
   }
 }
