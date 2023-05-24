@@ -1,13 +1,19 @@
 import Image from 'next/image'
-import { FiChevronsDown } from 'react-icons/fi'
 import i18n from '@/i18n'
 import CtaButton from '@/components/client/CtaButton'
+import ScrollDownButton from '@/components/client/ScrollDownButton'
+import SolutionCarousel from '@/components/client/SolutionCarousel'
 import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
+import SolutionCard from '@/components/server/SolutionCard'
 import WEB_PATH from '@/constants/path'
+import {
+  XTRA_CAROUSEL_SOLUTION,
+  XTRA_MAIN_SOLUTION,
+} from '@/constants/solutions'
 import { XTRA_TEAM } from '@/constants/teams'
-import landingSectionIllustration from '@/public/static/images/landing-section-illustration.png'
-import landingSectionLogo from '@/public/static/images/landing-section-logo.svg'
+import landingSectionIllustration from '@/public/static/images/illustrations/landing-section.png'
+import landingSectionLogo from '@/public/static/images/logos/landing-section.svg'
 
 export default async function IndexPage({
   params: { locale },
@@ -43,7 +49,7 @@ export default async function IndexPage({
             />
           </div>
           <div className="flex flex-1 flex-col justify-end items-center">
-            <FiChevronsDown className="mb-10 cursor-pointer text-sky-400 hover:text-sky-200 w-7 h-7" />
+            <ScrollDownButton />
           </div>
           <Image
             src={landingSectionIllustration}
@@ -58,7 +64,7 @@ export default async function IndexPage({
         >
           <div className="max-w-screen-2xl flex flex-row flex-wrap justify-center lg:flex-row-reverse lg:flex-nowrap ">
             <div className="lg:pl-5 flex flex-col flex-wrwap justify-center text-dark-100">
-              <h2 className="text-center lg:text-left mb-5 font-bold text-4xl">
+              <h2 className="text-center lg:text-left mb-2 font-bold text-2xl">
                 {dictionary.page_index.sections.founder.title}
               </h2>
               <p>{dictionary.page_index.sections.founder.description}</p>
@@ -84,6 +90,44 @@ export default async function IndexPage({
                 &nbsp; {XTRA_TEAM[0].name} - Founder Xtra Teknologi
               </span>
             </p>
+          </div>
+        </section>
+        <section
+          id="solutions"
+          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row justify-center items-center"
+        >
+          <div className="mt-10 max-w-screen-2xl w-full flex flex-row flex-wrap">
+            <h3 className="w-full text-center lg:text-left mb-5 font-bold text-4xl text-white">
+              {dictionary.page_index.sections.solution.title}
+            </h3>
+            <div className="w-full px-8 md:px-0 grid grid-flow-rows rid-rows-3 md:grid-flow-col md:grid-cols-3 gap-5 items-center justify-center">
+              {XTRA_MAIN_SOLUTION.map((solution) => (
+                <SolutionCard
+                  key={solution.link}
+                  title={i18n.accessor(dictionary, solution.title_dictionary)}
+                  description={i18n.accessor(
+                    dictionary,
+                    solution.description_dictionary
+                  )}
+                  image={solution.illustration_image}
+                  link={solution.link}
+                  linkLabel={dictionary.page_index.actions.learn_more}
+                />
+              ))}
+            </div>
+            <div className="my-10 w-full">
+              <SolutionCarousel
+                dictionary={dictionary}
+                solutions={XTRA_CAROUSEL_SOLUTION}
+              />
+            </div>
+            <div className="w-full flex justify-center">
+              <CtaButton
+                variant="secondary"
+                label={dictionary.page_index.actions.more_about_our_solutions}
+                href={WEB_PATH.solutions}
+              />
+            </div>
           </div>
         </section>
       </MainContent>
