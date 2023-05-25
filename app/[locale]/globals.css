@@ -49,3 +49,33 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.cta-secondary {
+  position: relative;
+}
+.cta-secondary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 1.5rem;
+  background: linear-gradient(to right top, #0092c2, #43d0ff);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+}
+
+.gradient-secondary-text {
+  background: linear-gradient(to right top, #0092c2, #43d0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-secondary:hover::before {
+  background: linear-gradient(to right top, #006385, #00bfff);
+}
+
+.cta-secondary:hover > .gradient-secondary-text {
+  background: linear-gradient(to right top, #006385, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

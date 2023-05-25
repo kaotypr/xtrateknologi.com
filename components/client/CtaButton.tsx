@@ -39,9 +39,9 @@ export default function CtaButton({
       <button
         {...buttonProps}
         onClick={handleClick}
-        className="group mx-3 my-2 px-10 py-2 flex flex-row flex-wrap items-center justify-center border-2 border-primary-50 rounded-3xl cursor-pointer hover:border-primary-80"
+        className="group mx-3 my-2 px-10 py-2 flex flex-row flex-wrap items-center justify-center rounded-3xl cursor-pointer cta-secondary"
       >
-        <div className="text-md lg:text-lg font-medium text-primary-50 group-hover:text-primary-80">
+        <div className="text-md lg:text-lg font-medium text-primary-50 group-hover:text-primary-80 gradient-secondary-text">
           {label}
         </div>
         {CtaIcon && <CtaIcon className="ml-5" />}
