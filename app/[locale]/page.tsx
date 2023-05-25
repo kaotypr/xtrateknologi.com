@@ -27,8 +27,8 @@ export default async function IndexPage({
       <Header dictionary={dictionary} />
       <MainContent>
         <section
-          id="#"
-          className="relative min-h-[calc(100vh-6rem)] mt-5 px-4 xl:px-60 box-border flex flex-col"
+          id="landing"
+          className="relative min-h-[calc(100vh-6rem)] mt-5 px-4 xl:px-60 box-border flex flex-wrap flex-col"
         >
           <div className="flex mt-1 md:mt-12 lg:mt-20 px-8 justify-center">
             <Image src={landingSectionLogo} alt="XTRA TEKNOLOGI LOGO" />
@@ -41,11 +41,13 @@ export default async function IndexPage({
             <CtaButton
               href={WEB_PATH.contact}
               label={dictionary.page_index.actions.make_an_appointment}
+              className="mx-2 my-2"
             />
             <CtaButton
               href={WEB_PATH.about}
               variant="secondary"
               label={dictionary.page_index.actions.learn_more_about_us}
+              className="mx-2 my-2"
             />
           </div>
           <div className="flex flex-1 flex-col justify-end items-center">
@@ -60,7 +62,7 @@ export default async function IndexPage({
         </section>
         <section
           id="founder"
-          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row justify-center items-center bg-white"
+          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-center items-center bg-white"
         >
           <div className="max-w-screen-2xl flex flex-row flex-wrap justify-center lg:flex-row-reverse lg:flex-nowrap ">
             <div className="lg:pl-5 flex flex-col flex-wrwap justify-center text-dark-100">
@@ -94,7 +96,7 @@ export default async function IndexPage({
         </section>
         <section
           id="solutions"
-          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row justify-center items-center"
+          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-center items-center"
         >
           <div className="mt-10 max-w-screen-2xl w-full flex flex-row flex-wrap">
             <h3 className="w-full text-center lg:text-left mb-5 font-bold text-4xl text-white">
@@ -127,6 +129,42 @@ export default async function IndexPage({
                 label={dictionary.page_index.actions.more_about_our_solutions}
                 href={WEB_PATH.solutions}
               />
+            </div>
+          </div>
+        </section>
+        <section
+          id="why-choose-us"
+          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-center items-center bg-white overflow-hidden"
+        >
+          <div className="relative flex flex-row justify-start flex-wrap">
+            <Image
+              alt="xtra logo with gradient color"
+              src="/static/images/logos/xtra-logo-gradient.svg"
+              width={283}
+              height={206}
+              className="absolute bottom-[30px] left-[-300px] w-[800px] max-w-[800px] opacity-10 lg:self-start lg:relative lg:w-auto lg:opacity-100 lg:bottom-[unset] lg:left-[unset]"
+            />
+            <div className="flex flex-1 flex-col items-center lg:items-start md:pl-10">
+              <h4 className="text-center font-bold text-5xl text-primary-90">
+                {dictionary.page_index.sections.why_choose_us.title}
+              </h4>
+              <p className="text-center text-primary-90 mt-5 mb-5 lg:text-left">
+                {dictionary.page_index.sections.why_choose_us.description}
+              </p>
+              <div className="w-full grid grid-flow-col grid-rows-3 md:grid-rows-1 md:grid-flow-row md:grid-cols-3 gap-2 justify-center items-center">
+                <CtaButton
+                  variant="secondary"
+                  label={dictionary.page_index.actions.more_about_us}
+                />
+                <CtaButton
+                  variant="secondary"
+                  label={dictionary.page_index.actions.see_our_projects}
+                />
+                <CtaButton
+                  variant="secondary"
+                  label={dictionary.page_index.actions.contact_us}
+                />
+              </div>
             </div>
           </div>
         </section>

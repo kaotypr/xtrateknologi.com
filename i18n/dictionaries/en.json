@@ -17,13 +17,20 @@
       },
       "solution": {
         "title": "Xtra Teknologi Solutions"
+      },
+      "why_choose_us": {
+        "title": "Why Choose Us ?",
+        "description": "Xtra Technology conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners"
       }
     },
     "actions": {
       "make_an_appointment": "Make An Appointment",
       "learn_more_about_us": "Learn More About Us",
       "learn_more": "Learn More",
-      "more_about_our_solutions": "See More Our Solutions"
+      "more_about_our_solutions": "See More Our Solutions",
+      "more_about_us": "More About Us",
+      "see_our_projects": "See Our Projects",
+      "contact_us": "Contact Us"
     }
   },
   "solutions": {

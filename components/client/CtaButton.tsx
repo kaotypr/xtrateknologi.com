@@ -17,6 +17,7 @@ export default function CtaButton({
   icon: CtaIcon,
   href,
   onClick,
+  className,
   ...buttonProps
 }: ICtaButtonProps) {
   const router = useRouter()
@@ -39,7 +40,10 @@ export default function CtaButton({
       <button
         {...buttonProps}
         onClick={handleClick}
-        className="group mx-3 my-2 px-10 py-2 flex flex-row flex-wrap items-center justify-center rounded-3xl cursor-pointer cta-secondary"
+        className={
+          'group px-10 py-2 flex flex-row flex-wrap items-center justify-center rounded-3xl cursor-pointer cta-secondary' +
+          ` ${className}`
+        }
       >
         <div className="text-md lg:text-lg font-medium text-primary-50 group-hover:text-primary-80 gradient-secondary-text">
           {label}
@@ -53,7 +57,10 @@ export default function CtaButton({
     <button
       {...buttonProps}
       onClick={handleClick}
-      className="group mx-3 my-2 px-10 py-2 flex flex-row flex-wrap items-center justify-center rounded-3xl cursor-pointer bg-gradient-to-tr from-primary-80 to-primary-30 hover:from-primary-100 hover:to-primary-50"
+      className={
+        'group px-10 py-2 flex flex-row flex-wrap items-center justify-center rounded-3xl cursor-pointer bg-gradient-to-tr from-primary-80 to-primary-30 hover:from-primary-100 hover:to-primary-50' +
+        ` ${className}`
+      }
     >
       <div className="text-md lg:text-lg font-medium text-dark-100 group-hover:text-dark-100 group-focus:text-dark-100">
         {label}
