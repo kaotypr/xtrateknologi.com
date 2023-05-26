@@ -79,3 +79,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+#footer-background-image {
+  background: url('/static/images/logos/footer-background-image.png');
+  background-repeat: repeat-x;
+}

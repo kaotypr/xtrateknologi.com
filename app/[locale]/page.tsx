@@ -3,6 +3,7 @@ import i18n from '@/i18n'
 import CtaButton from '@/components/client/CtaButton'
 import ScrollDownButton from '@/components/client/ScrollDownButton'
 import SolutionCarousel from '@/components/client/SolutionCarousel'
+import Footer from '@/components/server/Footer'
 import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
 import SolutionCard from '@/components/server/SolutionCard'
@@ -99,7 +100,7 @@ export default async function IndexPage({
           className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-center items-center"
         >
           <div className="mt-10 max-w-screen-2xl w-full flex flex-row flex-wrap">
-            <h3 className="w-full text-center lg:text-left mb-5 font-bold text-4xl text-white">
+            <h3 className="w-full text-center lg:text-left mb-5 font-bold text-3xl lg:text-4xl text-white">
               {dictionary.page_index.sections.solution.title}
             </h3>
             <div className="w-full px-8 md:px-0 grid grid-flow-rows rid-rows-3 md:grid-flow-col md:grid-cols-3 gap-5 items-center justify-center">
@@ -145,7 +146,7 @@ export default async function IndexPage({
               className="absolute bottom-[30px] left-[-300px] w-[800px] max-w-[800px] opacity-10 lg:self-start lg:relative lg:w-auto lg:opacity-100 lg:bottom-[unset] lg:left-[unset]"
             />
             <div className="flex flex-1 flex-col items-center lg:items-start md:pl-10">
-              <h4 className="text-center font-bold text-5xl text-primary-90">
+              <h4 className="text-3xl text-center font-bold lg:text-5xl text-primary-90">
                 {dictionary.page_index.sections.why_choose_us.title}
               </h4>
               <p className="text-center text-primary-90 mt-5 mb-5 lg:text-left">
@@ -154,11 +155,11 @@ export default async function IndexPage({
               <div className="w-full grid grid-flow-col grid-rows-3 md:grid-rows-1 md:grid-flow-row md:grid-cols-3 gap-2 justify-center items-center">
                 <CtaButton
                   variant="secondary"
-                  label={dictionary.page_index.actions.more_about_us}
+                  label={dictionary.page_index.actions.about_us}
                 />
                 <CtaButton
                   variant="secondary"
-                  label={dictionary.page_index.actions.see_our_projects}
+                  label={dictionary.page_index.actions.our_projects}
                 />
                 <CtaButton
                   variant="secondary"
@@ -169,6 +170,7 @@ export default async function IndexPage({
           </div>
         </section>
       </MainContent>
+      <Footer dictionary={dictionary} />
     </>
   )
 }

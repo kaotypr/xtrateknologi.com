@@ -8,6 +8,35 @@
     "projects": "Our Projects",
     "contact": "Contact"
   },
+  "footer": {
+    "information": {
+      "title": "Information",
+      "items": {
+        "faq": "FAQ",
+        "about": "About Xtra Teknologi",
+        "team": "Xtra Teknologi Teams"
+      }
+    },
+    "services": {
+      "title": "Xtra Services",
+      "items": {
+        "hardware_suply": "Hardware Supply",
+        "cctv": "CCTV",
+        "network_security": "Network Security",
+        "mobile_app_development": "Mobile App Development",
+        "web_development": "Web Development",
+        "iot": "IoT",
+        "server_and_data_center": "Server & Data Center",
+        "others": "See More"
+      }
+    },
+    "contact_info": {
+      "title": "Contact Info"
+    },
+    "social_media": {
+      "title": "Social Media"
+    }
+  },
   "page_index": {
     "sections": {
       "founder": {
@@ -28,8 +57,8 @@
       "learn_more_about_us": "Learn More About Us",
       "learn_more": "Learn More",
       "more_about_our_solutions": "See More Our Solutions",
-      "more_about_us": "More About Us",
-      "see_our_projects": "See Our Projects",
+      "about_us": "About Us",
+      "our_projects": "Our Projects",
       "contact_us": "Contact Us"
     }
   },
