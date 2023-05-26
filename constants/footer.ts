@@ -79,7 +79,7 @@ export const footerContactInfo = [
   },
   {
     content: '+info@x-teknologi.com',
-    id: 'phone_number',
+    id: 'email',
     link: 'mailto:info@x-teknologi.com',
     icon: FiMail,
   },
