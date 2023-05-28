@@ -1,4 +1,99 @@
 {
   "welcome": "Selamat Datang",
-  "description": "Xtra Teknologi adalah perusahaan yang bergerak pada bidang pelayanan jasa dan penyediaan barang untuk kebutuhan berbagai bisnis. Kami senantiasa memberikan solusi terbaik dengan upaya ekstra untuk membantu mengembangkan bisnis anda."
+  "description": "Xtra Teknologi adalah perusahaan yang bergerak pada bidang pelayanan jasa dan penyediaan barang untuk kebutuhan berbagai bisnis. Kami senantiasa memberikan solusi terbaik dengan upaya ekstra untuk membantu mengembangkan bisnis anda.",
+  "navigation": {
+    "index": "Beranda",
+    "about": "Tentang Kami",
+    "solutions": "Solusi Kami",
+    "projects": "Proyek Kami",
+    "contact": "Kontak"
+  },
+  "footer": {
+    "information": {
+      "title": "Informasi",
+      "items": {
+        "faq": "FAQ",
+        "about": "Tentang Xtra Teknologi",
+        "team": "Tim Xtra Teknologi"
+      }
+    },
+    "services": {
+      "title": "Layanan Xtra",
+      "items": {
+        "hardware_suply": "Hardware Supply",
+        "cctv": "CCTV",
+        "network_security": "Network Security",
+        "mobile_app_development": "Mobile App Development",
+        "web_development": "Web Development",
+        "iot": "IoT",
+        "server_and_data_center": "Server & Data Center",
+        "others": "Lihat Lainnya"
+      }
+    },
+    "contact_info": {
+      "title": "Info Kontak"
+    },
+    "social_media": {
+      "title": "Media Sosial"
+    }
+  },
+  "page_index": {
+    "sections": {
+      "founder": {
+        "title": "Solusi Xtra dengan Xtra Teknologi",
+        "description": "X-Teknologi bertekad untuk menyediakan Solusi IT, Bisnis & Mechanical Electrical untuk memenuhi dan melayani kebutuhan pasar yang berkembang. Antisipasi kami terhadap munculnya kebutuhan pasar tidak hanya dengan menjual produk & jasa, tetapi juga dengan memberikan konsultasi & solusi, serta menjalin hubungan yang baik terhadap klien & partner.",
+        "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra technology as your next business partner."
+      },
+      "solution": {
+        "title": "Solusi Xtra Teknologi"
+      },
+      "why_choose_us": {
+        "title": "Why Choose Us ?",
+        "description": "Xtra Technology conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners"
+      }
+    },
+    "actions": {
+      "make_an_appointment": "Hubungi Xtra Teknologi",
+      "learn_more_about_us": "Lebih Lanjut Tetang Kami",
+      "learn_more": "Lebih Lanjut",
+      "more_about_our_solutions": "Solusi Xtra Teknologi Lebih Lanjut",
+      "about_us": "Tentang Kami",
+      "our_projects": "Project Kami",
+      "contact_us": "Kontak Kami"
+    }
+  },
+  "solutions": {
+    "main": {
+      "business": {
+        "title": "Business Solution",
+        "description": "Buat bisnis anda lebih berkembang dan maju dengan memanfaatkan analisa bisnis, strategi pengembangan bisnis dan pengelolaan bisnis dari kami"
+      },
+      "it": {
+        "title": "IT Solution",
+        "description": "Xtra Teknlogi Berdedikasi memberikan solusi IT terbaik dengan integrasi sistem yang mumpuni demi pengembangan bisnis anda ke tahap yang lebih besar lagi"
+      },
+      "electrical": {
+        "title": "Electrical Solution",
+        "description": "Bertekad memberikan support dan solusi yang terbaik untuk mengatasi masalah kelistrikan anda baik untuk industri besar maupun kecil"
+      }
+    },
+    "it": {
+      "hardware_supply": {
+        "title": "Hardware Supply",
+        "description": ""
+      },
+      "cctv": {
+        "title": "CCTV Solution",
+        "description": ""
+      },
+      "network_security": {
+        "title": "Network Security",
+        "description": ""
+      },
+      "app_development": {
+        "title": "App Development",
+        "description": ""
+      }
+    }
+  }
 }

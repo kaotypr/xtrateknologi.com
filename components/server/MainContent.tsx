@@ -1,7 +1,9 @@
 export default function MainContent({
   children,
+  id,
 }: {
   children: React.ReactNode
+  id?: string
 }) {
-  return <main>{children}</main>
+  return <main id={id}>{children}</main>
 }

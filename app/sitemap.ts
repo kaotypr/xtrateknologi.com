@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
+import i18n from '@/i18n'
 import WEB_PATH from '@/constants/path'
 import { WEB_URL } from '@/constants/url'
-import { i18n } from '@/i18n/config'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const mainUrls = Object.keys(WEB_PATH).map((path) =>
@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const multilingualUrls: string[] = []
 
   mainUrls.forEach((url) => {
-    i18n.locales.forEach((locale) => {
+    i18n.config.locales.forEach((locale) => {
       multilingualUrls.push(url + '/' + locale)
     })
   })

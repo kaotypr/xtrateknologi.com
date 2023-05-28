@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 23, 23, 23;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 23, 23, 23;
+    --background-end-rgb: 23, 23, 23;
   }
 }
 
@@ -24,4 +24,63 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00bfff;
+  border-radius: 5px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cta-secondary {
+  position: relative;
+}
+.cta-secondary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 1.5rem;
+  background: linear-gradient(to right top, #0092c2, #43d0ff);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+}
+
+.gradient-secondary-text {
+  background: linear-gradient(to right top, #0092c2, #43d0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-secondary:hover::before {
+  background: linear-gradient(to right top, #006385, #00bfff);
+}
+
+.cta-secondary:hover > .gradient-secondary-text {
+  background: linear-gradient(to right top, #006385, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#footer-background-image {
+  background: url('/static/images/logos/footer-background-image.png');
+  background-repeat: repeat-x;
 }
