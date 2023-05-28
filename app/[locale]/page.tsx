@@ -26,7 +26,7 @@ export default async function IndexPage({
   return (
     <>
       <Header dictionary={dictionary} />
-      <MainContent>
+      <MainContent id="index">
         <section
           id="landing"
           className="relative min-h-[calc(100vh-6rem)] mt-5 px-4 xl:px-60 box-border flex flex-wrap flex-col"
