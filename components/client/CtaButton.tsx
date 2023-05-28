@@ -1,26 +1,27 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import React, { useCallback } from 'react'
-import { IconType } from 'react-icons'
+import * as RiFeather from 'react-icons/fi'
 
 interface ICtaButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string
   variant?: 'primary' | 'secondary'
-  icon?: IconType
+  icon?: keyof typeof RiFeather
   href?: string
 }
 
 export default function CtaButton({
   variant = 'primary',
   label,
-  icon: CtaIcon,
+  icon: iconKey,
   href,
   onClick,
   className,
   ...buttonProps
 }: ICtaButtonProps) {
   const router = useRouter()
+  const SelectedIcon = iconKey ? RiFeather[iconKey] : null
 
   const handleClick = useCallback(
     (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -48,7 +49,9 @@ export default function CtaButton({
         <div className="text-md lg:text-lg font-medium text-primary-50 group-hover:text-primary-80 gradient-secondary-text">
           {label}
         </div>
-        {CtaIcon && <CtaIcon className="ml-5" />}
+        {SelectedIcon && (
+          <SelectedIcon className="ml-3 text-md lg:text-lg text-primary-50 group-hover:text-primary-80 gradient-secondary-text" />
+        )}
       </button>
     )
   }
@@ -65,7 +68,9 @@ export default function CtaButton({
       <div className="text-md lg:text-lg font-medium text-dark-100 group-hover:text-dark-100 group-focus:text-dark-100">
         {label}
       </div>
-      {CtaIcon && <CtaIcon className="ml-5" />}
+      {SelectedIcon && (
+        <SelectedIcon className="ml-3 text-md lg:text-lg text-dark-100" />
+      )}
     </button>
   )
 }

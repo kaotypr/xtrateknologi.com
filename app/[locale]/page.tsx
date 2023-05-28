@@ -40,11 +40,13 @@ export default async function IndexPage({
           </div>
           <div className="mt-10 flex flex-row flex-wrap justify-center">
             <CtaButton
+              icon="FiActivity"
               href={WEB_PATH.contact}
               label={dictionary.page_index.actions.make_an_appointment}
               className="mx-2 my-2"
             />
             <CtaButton
+              icon="FiInfo"
               href={WEB_PATH.about}
               variant="secondary"
               label={dictionary.page_index.actions.learn_more_about_us}
@@ -126,6 +128,7 @@ export default async function IndexPage({
             </div>
             <div className="w-full flex justify-center">
               <CtaButton
+                icon="FiBookOpen"
                 variant="secondary"
                 label={dictionary.page_index.actions.more_about_our_solutions}
                 href={WEB_PATH.solutions}
@@ -154,14 +157,17 @@ export default async function IndexPage({
               </p>
               <div className="w-full grid grid-flow-col grid-rows-3 md:grid-rows-1 md:grid-flow-row md:grid-cols-3 gap-2 justify-center items-center">
                 <CtaButton
+                  icon="FiInfo"
                   variant="secondary"
                   label={dictionary.page_index.actions.about_us}
                 />
                 <CtaButton
+                  icon="FiPackage"
                   variant="secondary"
                   label={dictionary.page_index.actions.our_projects}
                 />
                 <CtaButton
+                  icon="FiPhoneCall"
                   variant="secondary"
                   label={dictionary.page_index.actions.contact_us}
                 />
