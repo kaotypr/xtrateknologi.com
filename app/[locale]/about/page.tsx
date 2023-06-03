@@ -4,6 +4,7 @@ import Footer from '@/components/server/Footer'
 import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
 import MotttoCard from '@/components/server/MottoCard'
+import { XTRA_WORKFLOW } from '@/constants/workflow'
 
 export default async function About({
   params: { locale },
@@ -78,7 +79,7 @@ export default async function About({
           </h2>
           <div
             id="motto-cards-wrapper"
-            className="w-full grid  grid-flow-col grid-rows-4 sm:grid-flow-row sm:grid-cols-4 gap-3 md:gap-5"
+            className="w-full grid  grid-flow-col grid-rows-4 sm:grid-flow-row sm:grid-rows-1 sm:grid-cols-4 gap-3 md:gap-5"
           >
             {Object.keys(dictionary.page_about.sections.motto).map(
               (xtraLetter, index) => (
@@ -94,6 +95,36 @@ export default async function About({
                 />
               )
             )}
+          </div>
+        </section>
+        <section
+          id="workflow"
+          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+        >
+          <h3 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+            {dictionary.page_about.sections.workflow.title}
+          </h3>
+          <div
+            id="workflow-items-wrapper"
+            className="w-full grid grid-flow-row grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5"
+          >
+            {XTRA_WORKFLOW.map(({ icon: IconWorkflow, title }) => (
+              <div
+                key={title}
+                className="w-full flex flex-col justify-center items-center lg:justify-start lg:items-start"
+              >
+                <div className="flex flex-col justify-center items-center">
+                  <div
+                    id="workflow-item"
+                    className="w-[80px] h-[80px] rounded-full bg-primary-10 flex justify-center items-center"
+                    title={title}
+                  >
+                    <IconWorkflow className="text-4xl text-primary-90" />
+                  </div>
+                  <span className="mt-3 text-lg text-center">{title}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </MainContent>
