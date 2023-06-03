@@ -3,6 +3,7 @@ import i18n from '@/i18n'
 import Footer from '@/components/server/Footer'
 import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
+import MotttoCard from '@/components/server/MottoCard'
 
 export default async function About({
   params: { locale },
@@ -18,8 +19,8 @@ export default async function About({
           id="pt-xtra-teknologi-solusi"
           className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
         >
-          <h1 className="mb-5 font-bold text-3xl md:text-5xl text-primary-50">
-            PT. Xtra Teknologi Solusi
+          <h1 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+            {dictionary.page_about.sections.pt_xtra_teknologi_solusi.title}
           </h1>
           <p>
             {
@@ -66,6 +67,33 @@ export default async function About({
                 )
               )}
             </ul>
+          </div>
+        </section>
+        <section
+          id="motto"
+          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+        >
+          <h2 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+            MOTTO XTRA TEKNOLOGI
+          </h2>
+          <div
+            id="motto-cards-wrapper"
+            className="w-full grid  grid-flow-col grid-rows-4 sm:grid-flow-row sm:grid-cols-4 gap-3 md:gap-5"
+          >
+            {Object.keys(dictionary.page_about.sections.motto).map(
+              (xtraLetter, index) => (
+                <MotttoCard
+                  key={xtraLetter}
+                  letter={xtraLetter as 'X' | 'T' | 'R' | 'A'}
+                  description={
+                    dictionary.page_about.sections.motto[
+                      xtraLetter as 'X' | 'T' | 'R' | 'A'
+                    ] as string
+                  }
+                  isFlipped={(index + 1) % 2 === 0}
+                />
+              )
+            )}
           </div>
         </section>
       </MainContent>
