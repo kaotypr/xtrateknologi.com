@@ -62,6 +62,24 @@
       "contact_us": "Contact Us"
     }
   },
+  "page_about": {
+    "sections": {
+      "pt_xtra_teknologi_solusi": {
+        "title": "PT. XTRA TEKNOLOGI SOLUSI",
+        "description": "PT. Xtra Teknologi Solusi (X-Technology) is an IT, Business and Mechanical Electrical consulting company which generally aims to provide the best solution that is expected to solve a problem that occurs to clients. Based on the deed of establishment of PT. Xtra Teknologi Solusi on February 2 2022 which was approved by a notary to focus on the development of web-based information systems & mobile apps, wholesale trading of computers & equipment. We are determined to provide the best IT, Business & Mechanical Electrical Solutions to meet and serve the changing market needs developing in Indonesia. PT. Xtra Teknologi Solusi (X-Teknologi) consists of various personnel with strong backgrounds & experience in each product solution because we provide ample opportunities for people to learn and develop to meet the increasingly complex and dynamic demands of the Technology & Business Industry.",
+        "vision": "VISION",
+        "vision_descriptions": [
+          "Become a business partner as the best and most trusted information technology consultant in Indonesia."
+        ],
+        "mission": "MISSION",
+        "mission_descriptions": [
+          "Form each individual in Xtra Teknologi as a team of professional IT consultants",
+          "Always provide the best analysis and service to produce the best effective and efficient solutions",
+          "Xtra solutions for every problem faced by clients"
+        ]
+      }
+    }
+  },
   "solutions": {
     "main": {
       "business": {
