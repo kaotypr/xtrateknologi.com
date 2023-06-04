@@ -1,9 +1,11 @@
+import Image from 'next/image'
 import { FiHexagon } from 'react-icons/fi'
 import i18n from '@/i18n'
 import Footer from '@/components/server/Footer'
 import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
 import MotttoCard from '@/components/server/MottoCard'
+import { REASONS_CHOOSE_XTRA } from '@/constants/reasons'
 import { XTRA_WORKFLOW } from '@/constants/workflow'
 
 export default async function About({
@@ -122,6 +124,70 @@ export default async function About({
                     <IconWorkflow className="text-4xl text-primary-90" />
                   </div>
                   <span className="mt-3 text-lg text-center">{title}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section
+          id="why-choose-us"
+          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+        >
+          <h3 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+            {dictionary.page_about.sections.why_choose_us.title}
+          </h3>
+          <div
+            id="why-choose-us-description"
+            className="w-full flex flex-row items-start"
+          >
+            <Image
+              src="/static/images/logos/xtrateknologi-light.svg"
+              alt="xtra teknologi logo"
+              width={110}
+              height={100}
+              className="lighter-logo mr-3 hidden sm:block"
+            />
+            <p>{dictionary.page_about.sections.why_choose_us.description}</p>
+          </div>
+          <div id="reasons-wrapper" className="w-full">
+            {REASONS_CHOOSE_XTRA.map((reasonItem, index) => (
+              <div
+                key={`reason_${index}`}
+                className="w-full my-5 bg-white rounded-2xl p-3 flex flex-col sm:flex-row flex-nowrap items-start"
+              >
+                <div className="flex flex-row items-center">
+                  <div
+                    id="reason-icon-wrapper"
+                    className="p-3 sm:p-5 rounded-full bg-dark-100"
+                  >
+                    <Image
+                      src={reasonItem.icon_source}
+                      alt={i18n.accessor(
+                        dictionary,
+                        reasonItem.title_dictionary
+                      )}
+                      width={20}
+                      height={20}
+                      className="w-[20px] h-[20px] sm:w-[30px] sm:h-[28px]"
+                    />
+                  </div>
+                  <div className="sm:hidden ml-3 font-bold text-2xl text-dark-100">
+                    {i18n.accessor(dictionary, reasonItem.title_dictionary)}
+                  </div>
+                </div>
+                <div
+                  id="reason-content-wrapper"
+                  className="flex flex-col flex-1 mt-1 sm:mt-0 sm:ml-3"
+                >
+                  <div className="hidden sm:block font-bold text-lg text-dark-100">
+                    {i18n.accessor(dictionary, reasonItem.title_dictionary)}
+                  </div>
+                  <p className="text-dark-100">
+                    {i18n.accessor(
+                      dictionary,
+                      reasonItem.description_dictionary
+                    )}
+                  </p>
                 </div>
               </div>
             ))}

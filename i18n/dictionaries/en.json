@@ -42,14 +42,14 @@
       "founder": {
         "title": "Xtra Solutions With Xtra Teknologi",
         "description": "X-Technology is determined to provide IT, Business & Mechanical Electrical Solutions to meet and serve the growing market needs. We anticipate emerging market needs not only by selling products & services, but also by providing consulting & solutions, as well as establishing good relationships with clients & partners.",
-        "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra technology as your next business partner."
+        "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra Teknologi as your next business partner."
       },
       "solution": {
         "title": "Xtra Teknologi Solutions"
       },
       "why_choose_us": {
         "title": "Why Choose Us ?",
-        "description": "Xtra Technology conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners"
+        "description": "Xtra Teknologi conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners"
       }
     },
     "actions": {
@@ -86,6 +86,36 @@
       },
       "workflow": {
         "title": "XTRA TEKNOLOGI WORKFLOW"
+      },
+      "why_choose_us": {
+        "title": "WHY CHOOSE XTRA TEKNOLOGI",
+        "description": "Xtra Teknologi conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners",
+        "reasons": {
+          "best_analysis": {
+            "title": "Best Analysis",
+            "description": "We try to analyze with the best method to find existing problems"
+          },
+          "best_solution": {
+            "title": "Best Solution",
+            "description": "We provide solutions that can be implemented easily to overcome existing problems"
+          },
+          "excellent_service": {
+            "title": "Excellent Service",
+            "description": "Always provide excellent service to each of our clients so that we can continue to maintain good relationships in the long term"
+          },
+          "friendly_cost": {
+            "title": "Friendly Cost",
+            "description": "We are proud to present a cost-friendly solution for each of our clients and of course without compromising our services and solutions"
+          },
+          "agile": {
+            "title": "Agile",
+            "description": "Pengambilan keputusan dan penyelesaian masalah yang cepat dan efisien karna kami tidak ingin waktu klien kami sedikitpun terbuang"
+          },
+          "professional": {
+            "title": "Professional",
+            "description": "We have a team that is professional in their field to analyze and solve problems so that the results obtained satisfy our clients"
+          }
+        }
       }
     }
   },

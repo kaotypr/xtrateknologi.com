@@ -86,6 +86,36 @@
       },
       "workflow": {
         "title": "WORKFLOW XTRA TEKNOLOGI"
+      },
+      "why_choose_us": {
+        "title": "KENAPA MEMILIH XTRA TEKNOLOGI",
+        "description": "Xtra Teknologi conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners",
+        "reasons": {
+          "best_analysis": {
+            "title": "Best Analysis",
+            "description": "Kami berupaya menganalisa dengan metode terbaik untuk menemukan permasalahan yang ada"
+          },
+          "best_solution": {
+            "title": "Best Solution",
+            "description": "Kami memberikan solusi-solusi yang dapat diterapkan dengan mudah untuk mengatasi permasalahan yang ada"
+          },
+          "excellent_service": {
+            "title": "Excellent Service",
+            "description": "Selalu memberikan pelayanan yang prima untuk setiap klien kami agar terus dapat menjaga hubungan baik dalam jangka panjang"
+          },
+          "friendly_cost": {
+            "title": "Friendly Cost",
+            "description": "Kami dengan bangga menyajikan solusi dengan biaya yang lebih bersahabat untuk setiap klien kami dan tentu saja tanpa mengurangi pelayanan dan solusi dari kami"
+          },
+          "agile": {
+            "title": "Agile",
+            "description": "Pengambilan keputusan dan penyelesaian masalah yang cepat dan efisien karna kami tidak ingin waktu klien kami sedikitpun terbuang"
+          },
+          "professional": {
+            "title": "Professional",
+            "description": "Kami memiliki tim yang profesional pada bidangnya untuk menganalisa dan menyelesaikan masalah sehingga hasil yang didapatkan memuaskan klien kami"
+          }
+        }
       }
     }
   },
