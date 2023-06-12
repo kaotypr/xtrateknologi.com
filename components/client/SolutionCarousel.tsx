@@ -69,12 +69,12 @@ export default function SolutionCarousel({
       />
       <div
         id={sliderId}
-        className="w-full px-5 py-5 md:py-10 overflow-x-auto whitespace-nowrap scroll-smooth rounded-2xl bg-[#1F1F1F] flex shadow-[inset_-6px_8px_15px_#0D0D0D] scrollbar-hide"
+        className="snap-x w-full px-5 py-5 md:py-10 overflow-x-auto whitespace-nowrap scroll-smooth rounded-2xl bg-[#1F1F1F] flex shadow-[inset_-6px_8px_15px_#0D0D0D] scrollbar-hide"
       >
         {solutions.map((solution) => (
           <div
             key={solution.link}
-            className="min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center hover:scale-110 ease-in-out duration-300"
+            className="snap-center min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center hover:scale-110 ease-in-out duration-300"
           >
             <Link href={solution.link} className="cursor-pointer">
               <Image
@@ -93,7 +93,7 @@ export default function SolutionCarousel({
         {solutions.map((solution) => (
           <div
             key={solution.link}
-            className="min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center cursor-pointer hover:scale-110 ease-in-out duration-300"
+            className="snap-center min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center cursor-pointer hover:scale-110 ease-in-out duration-300"
           >
             <Image
               src={solution.illustration_image}
@@ -110,7 +110,7 @@ export default function SolutionCarousel({
         {solutions.map((solution) => (
           <div
             key={solution.link}
-            className="min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center cursor-pointer hover:scale-110 ease-in-out duration-300"
+            className="snap-center min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center cursor-pointer hover:scale-110 ease-in-out duration-300"
           >
             <Image
               src={solution.illustration_image}
@@ -127,7 +127,7 @@ export default function SolutionCarousel({
         {solutions.map((solution) => (
           <div
             key={solution.link}
-            className="min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center cursor-pointer hover:scale-110 ease-in-out duration-300"
+            className="snap-center min-w-[130px] md:min-w-[200px] px-2 flex flex-col justify-center items-center cursor-pointer hover:scale-110 ease-in-out duration-300"
           >
             <Image
               src={solution.illustration_image}
