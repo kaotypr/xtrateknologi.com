@@ -1,11 +1,9 @@
 export default function MotttoCard({
   letter,
   description,
-  isFlipped,
 }: {
   letter: 'X' | 'T' | 'R' | 'A'
   description: string
-  isFlipped: boolean
 }) {
   const splittedDescription = description.split(' ')
   const firstWordDescription = splittedDescription.splice(0, 1)
@@ -17,13 +15,7 @@ export default function MotttoCard({
         <strong>{firstWordDescription}&nbsp;</strong>
         {splittedDescription.join(' ')}
       </div>
-      <span
-        className={`absolute font-bold text-[100pt] md:text-[150pt] text-dark-100 ${
-          !isFlipped
-            ? '-bottom-[70%] -left-0 sm:max-md:-bottom-[40%]'
-            : '-bottom-[70%] -left-0 sm:max-md:-bottom-[40%]'
-        }`}
-      >
+      <span className="absolute font-bold text-[100pt] md:text-[150pt] text-dark-100 -bottom-[70%] -left-0 sm:max-md:-bottom-[40%]">
         {letter}
       </span>
     </div>

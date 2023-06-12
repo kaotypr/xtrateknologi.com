@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import { FiHexagon } from 'react-icons/fi'
 import i18n from '@/i18n'
+import InitScrollUp from '@/components/client/InitScrollUp'
 import Footer from '@/components/server/Footer'
 import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
 import MotttoCard from '@/components/server/MottoCard'
 import { REASONS_CHOOSE_XTRA } from '@/constants/reasons'
+import { XTRA_TEAM } from '@/constants/teams'
 import { XTRA_WORKFLOW } from '@/constants/workflow'
 
 export default async function About({
@@ -16,6 +18,7 @@ export default async function About({
   const dictionary = await i18n.getDictionary(locale)
   return (
     <>
+      <InitScrollUp />
       <Header dictionary={dictionary} />
       <MainContent id="about">
         <section
@@ -84,7 +87,7 @@ export default async function About({
             className="w-full grid  grid-flow-col grid-rows-4 sm:grid-flow-row sm:grid-rows-1 sm:grid-cols-4 gap-3 md:gap-5"
           >
             {Object.keys(dictionary.page_about.sections.motto).map(
-              (xtraLetter, index) => (
+              (xtraLetter) => (
                 <MotttoCard
                   key={xtraLetter}
                   letter={xtraLetter as 'X' | 'T' | 'R' | 'A'}
@@ -93,7 +96,6 @@ export default async function About({
                       xtraLetter as 'X' | 'T' | 'R' | 'A'
                     ] as string
                   }
-                  isFlipped={(index + 1) % 2 === 0}
                 />
               )
             )}
@@ -188,6 +190,39 @@ export default async function About({
                       reasonItem.description_dictionary
                     )}
                   </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section
+          id="team"
+          className="px-4 py-8 mb-24 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+        >
+          <h4 className="mb-10 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+            {dictionary.page_about.sections.teams.title}
+          </h4>
+          <div
+            id="team-photo-wrapper"
+            className="w-full grid grid-flow-row grid-cols-2 sm:grid-cols-4 gap-10"
+          >
+            {XTRA_TEAM.map((team) => (
+              <div
+                key={team.name}
+                className="flex flex-col justify-start items-center"
+              >
+                <Image
+                  src={team.photo}
+                  alt={`${team.name}'s photo, as ${team.position}`}
+                  width={300}
+                  height={300}
+                  className="rounded-full flex text-center justify-evenly items-center grayscale"
+                />
+                <div className="flex flex-col mt-3 text-center">
+                  <span className="text-sm sm:text-lg md:text-xl">
+                    {team.name}
+                  </span>
+                  <span className="text-sm">{team.position}</span>
                 </div>
               </div>
             ))}

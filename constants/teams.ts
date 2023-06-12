@@ -32,11 +32,11 @@ export const XTRA_TEAM = [
   {
     name: 'Eko Setyo',
     position: 'IoT Engineer',
-    photo: '/static/images/teams/eko-setyo.png',
+    photo: '/static/images/teams/eko-sutrisno.png',
   },
   {
     name: 'Adhitya Sanjaya',
-    position: 'Software Eng ing eng',
+    position: 'Software Architect',
     photo: '/static/images/teams/adhitya-sanjaya.png',
   },
 ]
