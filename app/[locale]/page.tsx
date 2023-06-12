@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import i18n from '@/i18n'
 import CtaButton from '@/components/client/CtaButton'
+import InitScrollUp from '@/components/client/InitScrollUp'
 import ScrollDownButton from '@/components/client/ScrollDownButton'
 import SolutionCarousel from '@/components/client/SolutionCarousel'
 import Footer from '@/components/server/Footer'
@@ -25,6 +26,7 @@ export default async function IndexPage({
 
   return (
     <>
+      <InitScrollUp />
       <Header dictionary={dictionary} />
       <MainContent id="index">
         <section

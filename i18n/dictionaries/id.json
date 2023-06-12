@@ -62,6 +62,66 @@
       "contact_us": "Kontak Kami"
     }
   },
+  "page_about": {
+    "sections": {
+      "pt_xtra_teknologi_solusi": {
+        "title": "PT. XTRA TEKNOLOGI SOLUSI",
+        "description": "PT. Xtra Teknologi Solusi (X-Teknologi) adalah perusahaan konsultansi IT, Bisnis dan Mechanical Electrical yang secara umum bertujuan memberikan solusi terbaik yang diharapkan dapat menyelesaikan suatu permasalahan yang terjadi pada klien. Berdasarkan akta pendirian PT. Xtra Teknologi Solusi pada 2 Febuari 2022 yang telah di sahkan oleh notaris untuk berfokus pada pengembangan Sistem Informasi berbasis web & mobile apps, perdagangan besar komputer & perlengkapannya.Kami bertekad untuk memberikan Solusi IT, Bisnis & Mechanical Electrical terbaik untuk memenuhi dan melayani kebutuhan pasar yang berkembang di Indonesia. PT. Xtra Teknologi Solusi (X-Teknologi) terdiri dari berbagai personal dengan latar belakang & pengalaman yang kuat dalam setiap solusi produk karena kami memberikan kesempatan yang luas bagi orang-orang untuk belajar dan berkembang guna memenuhi tuntutan Industri Technology & Bisnis yang semakin kompleks dan dinamis.",
+        "vision": "VISION",
+        "vision_descriptions": [
+          "Menjadi mitra bisnis sebagai konsultan teknologi informasi terbaik dan terpercaya di Indonesia."
+        ],
+        "mission": "MISSION",
+        "mission_descriptions": [
+          "Membentuk setiap individu dalam Xtra Teknologi sebagai tim konsultan IT yang profesional",
+          "Senantiasa memberikan analisa dan pelayanan terbaik untuk menghasilkan solusi yang terbaik efektif dan efisien",
+          "Xtra solusi untuk setiap permasalahan yang dihadapi klien"
+        ]
+      },
+      "motto": {
+        "X": "Xtra effort to be your best business partner",
+        "T": "Technology is the way we help to make business better",
+        "R": "Rapid, remarkable, responsible, responsive to every business plan",
+        "A": "Awesome analysis and knowledge to serving solutions"
+      },
+      "workflow": {
+        "title": "WORKFLOW XTRA TEKNOLOGI"
+      },
+      "why_choose_us": {
+        "title": "KENAPA MEMILIH XTRA TEKNOLOGI",
+        "description": "Xtra Teknologi conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners",
+        "reasons": {
+          "best_analysis": {
+            "title": "Best Analysis",
+            "description": "Kami berupaya menganalisa dengan metode terbaik untuk menemukan permasalahan yang ada"
+          },
+          "best_solution": {
+            "title": "Best Solution",
+            "description": "Kami memberikan solusi-solusi yang dapat diterapkan dengan mudah untuk mengatasi permasalahan yang ada"
+          },
+          "excellent_service": {
+            "title": "Excellent Service",
+            "description": "Selalu memberikan pelayanan yang prima untuk setiap klien kami agar terus dapat menjaga hubungan baik dalam jangka panjang"
+          },
+          "friendly_cost": {
+            "title": "Friendly Cost",
+            "description": "Kami dengan bangga menyajikan solusi dengan biaya yang lebih bersahabat untuk setiap klien kami dan tentu saja tanpa mengurangi pelayanan dan solusi dari kami"
+          },
+          "agile": {
+            "title": "Agile",
+            "description": "Pengambilan keputusan dan penyelesaian masalah yang cepat dan efisien karna kami tidak ingin waktu klien kami sedikitpun terbuang"
+          },
+          "professional": {
+            "title": "Professional",
+            "description": "Kami memiliki tim yang profesional pada bidangnya untuk menganalisa dan menyelesaikan masalah sehingga hasil yang didapatkan memuaskan klien kami"
+          }
+        }
+      },
+      "teams": {
+        "title": "TIM XTRA"
+      }
+    }
+  },
   "solutions": {
     "main": {
       "business": {

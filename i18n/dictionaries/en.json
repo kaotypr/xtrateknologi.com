@@ -42,14 +42,14 @@
       "founder": {
         "title": "Xtra Solutions With Xtra Teknologi",
         "description": "X-Technology is determined to provide IT, Business & Mechanical Electrical Solutions to meet and serve the growing market needs. We anticipate emerging market needs not only by selling products & services, but also by providing consulting & solutions, as well as establishing good relationships with clients & partners.",
-        "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra technology as your next business partner."
+        "quote": "There is no problem that cannot be solved and nothing is impossible with Xtra Teknologi as your next business partner."
       },
       "solution": {
         "title": "Xtra Teknologi Solutions"
       },
       "why_choose_us": {
         "title": "Why Choose Us ?",
-        "description": "Xtra Technology conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners"
+        "description": "Xtra Teknologi conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners"
       }
     },
     "actions": {
@@ -60,6 +60,66 @@
       "about_us": "About Us",
       "our_projects": "Our Projects",
       "contact_us": "Contact Us"
+    }
+  },
+  "page_about": {
+    "sections": {
+      "pt_xtra_teknologi_solusi": {
+        "title": "PT. XTRA TEKNOLOGI SOLUSI",
+        "description": "PT. Xtra Teknologi Solusi (X-Technology) is an IT, Business and Mechanical Electrical consulting company which generally aims to provide the best solution that is expected to solve a problem that occurs to clients. Based on the deed of establishment of PT. Xtra Teknologi Solusi on February 2 2022 which was approved by a notary to focus on the development of web-based information systems & mobile apps, wholesale trading of computers & equipment. We are determined to provide the best IT, Business & Mechanical Electrical Solutions to meet and serve the changing market needs developing in Indonesia. PT. Xtra Teknologi Solusi (X-Teknologi) consists of various personnel with strong backgrounds & experience in each product solution because we provide ample opportunities for people to learn and develop to meet the increasingly complex and dynamic demands of the Technology & Business Industry.",
+        "vision": "VISION",
+        "vision_descriptions": [
+          "Become a business partner as the best and most trusted information technology consultant in Indonesia."
+        ],
+        "mission": "MISSION",
+        "mission_descriptions": [
+          "Form each individual in Xtra Teknologi as a team of professional IT consultants",
+          "Always provide the best analysis and service to produce the best effective and efficient solutions",
+          "Xtra solutions for every problem faced by clients"
+        ]
+      },
+      "motto": {
+        "X": "Xtra effort to be your best business partner",
+        "T": "Technology is the way we help to make business better",
+        "R": "Rapid, remarkable, responsible, responsive to every business plan",
+        "A": "Awesome analysis and knowledge to serving solutions"
+      },
+      "workflow": {
+        "title": "XTRA TEKNOLOGI WORKFLOW"
+      },
+      "why_choose_us": {
+        "title": "WHY CHOOSE XTRA TEKNOLOGI",
+        "description": "Xtra Teknologi conducts surveys to analyze, detect problems, discuss and then provide solutions. We can also immediately implement the best, most effective and efficient solutions in order to provide satisfactory results to our business partners",
+        "reasons": {
+          "best_analysis": {
+            "title": "Best Analysis",
+            "description": "We try to analyze with the best method to find existing problems"
+          },
+          "best_solution": {
+            "title": "Best Solution",
+            "description": "We provide solutions that can be implemented easily to overcome existing problems"
+          },
+          "excellent_service": {
+            "title": "Excellent Service",
+            "description": "Always provide excellent service to each of our clients so that we can continue to maintain good relationships in the long term"
+          },
+          "friendly_cost": {
+            "title": "Friendly Cost",
+            "description": "We are proud to present a cost-friendly solution for each of our clients and of course without compromising our services and solutions"
+          },
+          "agile": {
+            "title": "Agile",
+            "description": "Pengambilan keputusan dan penyelesaian masalah yang cepat dan efisien karna kami tidak ingin waktu klien kami sedikitpun terbuang"
+          },
+          "professional": {
+            "title": "Professional",
+            "description": "We have a team that is professional in their field to analyze and solve problems so that the results obtained satisfy our clients"
+          }
+        }
+      },
+      "teams": {
+        "title": "XTRA TEAM"
+      }
     }
   },
   "solutions": {
