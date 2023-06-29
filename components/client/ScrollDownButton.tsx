@@ -14,7 +14,7 @@ export default function ScrollDownButton({ toId }: { toId?: string }) {
       }
     } else {
       scrollBy({
-        top: document.documentElement.clientHeight,
+        top: document.documentElement.clientHeight - 80,
         behavior: 'smooth',
       })
     }
