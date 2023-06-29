@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { FiHexagon } from 'react-icons/fi'
 import i18n from '@/i18n'
+import Header from '@/components/client/Header'
 import InitScrollUp from '@/components/client/InitScrollUp'
 import Footer from '@/components/server/Footer'
-import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
 import MotttoCard from '@/components/server/MottoCard'
 import { REASONS_CHOOSE_XTRA } from '@/constants/reasons'
@@ -19,7 +19,7 @@ export default async function About({
   return (
     <>
       <InitScrollUp />
-      <Header dictionary={dictionary} locale={locale} />
+      <Header dictionary={dictionary} />
       <MainContent id="about">
         <section
           id="pt-xtra-teknologi-solusi"
