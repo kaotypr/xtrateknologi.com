@@ -1,6 +1,10 @@
 type i18nConfigType = {
   readonly defaultLocale: 'en'
   readonly locales: readonly ['en', 'id']
+  readonly localesContinuation: readonly {
+    en: 'English'
+    id: 'Bahasa'
+  }
 }
 type Locale = i18nConfigType['locales'][number]
 type DictionaryType = typeof import('../dictionaries/en.json')
