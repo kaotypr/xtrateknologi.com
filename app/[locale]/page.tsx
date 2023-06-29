@@ -27,7 +27,7 @@ export default async function IndexPage({
   return (
     <>
       <InitScrollUp />
-      <Header dictionary={dictionary} />
+      <Header dictionary={dictionary} locale={locale} />
       <MainContent id="index">
         <section
           id="landing"

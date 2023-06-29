@@ -11,7 +11,7 @@ export default async function Solutions({
   const dictionary = await i18n.getDictionary(locale)
   return (
     <>
-      <Header dictionary={dictionary} />
+      <Header dictionary={dictionary} locale={locale} />
       <MainContent>
         <h1>Solutions</h1>
       </MainContent>

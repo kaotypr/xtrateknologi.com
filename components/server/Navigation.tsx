@@ -2,15 +2,17 @@ import Link from 'next/link'
 
 export default function Navigation({
   dictionary,
+  locale,
 }: {
   dictionary: DictionaryType
+  locale: Locale
 }) {
   return (
     <nav className="hidden lg:block lg:h-full">
       <ul className="h-full grid grid-rows-1 grid-flow-col gap-6 justify-center items-center">
         <li>
           <Link
-            href="/"
+            href={`/${locale}`}
             about="Back to home"
             aria-label="Back to home"
             className="text-lg text-primary-50 hover:text-primary-10"
@@ -20,7 +22,7 @@ export default function Navigation({
         </li>
         <li>
           <Link
-            href="/about"
+            href={`/${locale}/about`}
             about="See about us"
             aria-label="See about us"
             className="text-lg text-primary-50 hover:text-primary-10"
@@ -30,7 +32,7 @@ export default function Navigation({
         </li>
         <li>
           <Link
-            href="/solutions"
+            href={`/${locale}/solutions`}
             about="See our solutions"
             aria-label="See our solutions"
             className="text-lg text-primary-50 hover:text-primary-10"
@@ -40,7 +42,7 @@ export default function Navigation({
         </li>
         <li>
           <Link
-            href="/projects"
+            href={`/${locale}/projects`}
             about="See our project"
             aria-label="See our project"
             className="text-lg text-primary-50 hover:text-primary-10"
@@ -50,7 +52,7 @@ export default function Navigation({
         </li>
         <li>
           <Link
-            href="/contact"
+            href={`/${locale}/contact`}
             about="Contact us"
             aria-label="Contact us"
             className="text-lg text-primary-50 hover:text-primary-10"
