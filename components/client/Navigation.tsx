@@ -5,14 +5,22 @@ import { useParams } from 'next/navigation'
 export default function Navigation({
   dictionary,
   isScrollOnTop,
+  isDrawerNav,
 }: {
   dictionary: DictionaryType
   isScrollOnTop: boolean
+  isDrawerNav?: boolean
 }) {
   const params = useParams()
   return (
-    <nav className="hidden lg:block lg:h-full">
-      <ul className="h-full grid grid-rows-1 grid-flow-col gap-6 justify-center items-center">
+    <nav className={`${isDrawerNav ? '' : 'hidden'} lg:block lg:h-full`}>
+      <ul
+        className={`${
+          isDrawerNav
+            ? ' h-auto grid grid-flow-row grid-cols-1 place-content-center text-center'
+            : 'h-full grid grid-rows-1 grid-flow-col'
+        } gap-6 justify-center items-center`}
+      >
         <li>
           <Link
             href={`/${params.locale}`}

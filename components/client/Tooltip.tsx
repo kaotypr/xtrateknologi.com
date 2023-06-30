@@ -16,7 +16,7 @@ export default function Tooltip({
       {children}
       <div
         id="tooltip-container"
-        className="absolute top-[calc(100%+10px)] left-[50%] hidden group-hover:block translate-x-[-50%] bg-primary-90 text-white rounded-md shadow-lg drop-shadow-sm"
+        className="absolute z-10 top-[calc(100%+10px)] left-[50%] hidden group-hover:block translate-x-[-50%] bg-primary-90 text-white rounded-md shadow-lg drop-shadow-sm"
       >
         <div
           id="tooltip-title"
