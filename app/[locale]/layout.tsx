@@ -1,10 +1,8 @@
 import './globals.css'
 import { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import i18n from '@/i18n'
 import { getDictionary } from '@/i18n/getDictionary'
-
-const inter = Inter({ subsets: ['latin'] })
+import { font_Saira } from '@/utils/fonts'
 
 const metadata: Metadata = {
   title: 'Xtra Teknologi Solusi',
@@ -59,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.locale}>
-      <body className={inter.className}>{children}</body>
+      <body className={font_Saira.className}>{children}</body>
     </html>
   )
 }

@@ -1,6 +1,6 @@
 import i18n from '@/i18n'
+import Header from '@/components/client/Header'
 import Footer from '@/components/server/Footer'
-import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
 
 export default async function Solutions({

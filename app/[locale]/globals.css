@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 8px;
   height: 5px;
 }
 
@@ -36,8 +36,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #00bfff;
-  border-radius: 5px;
+  background-color: #0092c2;
 }
 
 .scrollbar-hide::-webkit-scrollbar {

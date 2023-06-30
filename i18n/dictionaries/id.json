@@ -37,6 +37,9 @@
       "title": "Media Sosial"
     }
   },
+  "actions": {
+    "switch_locale": "Ubah Bahasa"
+  },
   "page_index": {
     "sections": {
       "founder": {
@@ -54,7 +57,7 @@
     },
     "actions": {
       "make_an_appointment": "Hubungi Xtra Teknologi",
-      "learn_more_about_us": "Lebih Lanjut Tetang Kami",
+      "learn_more_about_us": "Lebih Lanjut Tentang Kami",
       "learn_more": "Lebih Lanjut",
       "more_about_our_solutions": "Solusi Xtra Teknologi Lebih Lanjut",
       "about_us": "Tentang Kami",

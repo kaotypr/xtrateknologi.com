@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { FiHexagon } from 'react-icons/fi'
 import i18n from '@/i18n'
+import Header from '@/components/client/Header'
 import InitScrollUp from '@/components/client/InitScrollUp'
 import Footer from '@/components/server/Footer'
-import Header from '@/components/server/Header'
 import MainContent from '@/components/server/MainContent'
 import MotttoCard from '@/components/server/MottoCard'
 import { REASONS_CHOOSE_XTRA } from '@/constants/reasons'
@@ -23,9 +23,9 @@ export default async function About({
       <MainContent id="about">
         <section
           id="pt-xtra-teknologi-solusi"
-          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+          className="px-4 py-4 sm:px-10 md:py-5 lg:px-20 lg:py-8 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
         >
-          <h1 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+          <h1 className="mb-5 w-full text-center sm:text-left font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
             {dictionary.page_about.sections.pt_xtra_teknologi_solusi.title}
           </h1>
           <p>
@@ -34,6 +34,24 @@ export default async function About({
                 .description
             }
           </p>
+          <div
+            id="motto"
+            className="w-full py-8 px-2 sm:px-0 grid  grid-flow-col grid-rows-4 sm:grid-flow-row sm:grid-rows-1 sm:grid-cols-4 gap-3 md:gap-5"
+          >
+            {Object.keys(dictionary.page_about.sections.motto).map(
+              (xtraLetter) => (
+                <MotttoCard
+                  key={xtraLetter}
+                  letter={xtraLetter as 'X' | 'T' | 'R' | 'A'}
+                  description={
+                    dictionary.page_about.sections.motto[
+                      xtraLetter as 'X' | 'T' | 'R' | 'A'
+                    ] as string
+                  }
+                />
+              )
+            )}
+          </div>
           <div id="vision" className="mt-5">
             <div id="vision-title" className="font-bold">
               {dictionary.page_about.sections.pt_xtra_teknologi_solusi.vision}
@@ -76,36 +94,10 @@ export default async function About({
           </div>
         </section>
         <section
-          id="motto"
-          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
-        >
-          <h2 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
-            MOTTO XTRA TEKNOLOGI
-          </h2>
-          <div
-            id="motto-cards-wrapper"
-            className="w-full grid  grid-flow-col grid-rows-4 sm:grid-flow-row sm:grid-rows-1 sm:grid-cols-4 gap-3 md:gap-5"
-          >
-            {Object.keys(dictionary.page_about.sections.motto).map(
-              (xtraLetter) => (
-                <MotttoCard
-                  key={xtraLetter}
-                  letter={xtraLetter as 'X' | 'T' | 'R' | 'A'}
-                  description={
-                    dictionary.page_about.sections.motto[
-                      xtraLetter as 'X' | 'T' | 'R' | 'A'
-                    ] as string
-                  }
-                />
-              )
-            )}
-          </div>
-        </section>
-        <section
           id="workflow"
-          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+          className="px-4 py-4 sm:px-10 md:py-5 lg:px-20 lg:py-8 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
         >
-          <h3 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+          <h3 className="mb-5 w-full text-center sm:text-left  font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
             {dictionary.page_about.sections.workflow.title}
           </h3>
           <div
@@ -133,9 +125,9 @@ export default async function About({
         </section>
         <section
           id="why-choose-us"
-          className="px-4 py-8 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+          className="px-4 py-4 sm:px-10 md:py-5 lg:px-20 lg:py-8 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
         >
-          <h3 className="mb-5 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+          <h3 className="mb-5 w-full text-center sm:text-left font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
             {dictionary.page_about.sections.why_choose_us.title}
           </h3>
           <div
@@ -197,9 +189,9 @@ export default async function About({
         </section>
         <section
           id="team"
-          className="px-4 py-8 mb-24 sm:px-10 md:py-10 lg:px-20 lg:py-16 xl:px-40 2xl:px-64 flex flex-row flex-wrap justify-start items-center"
+          className="px-4 py-4 sm:px-10 md:py-5 lg:px-20 lg:py-8 xl:px-40 2xl:px-64 mb-24 flex flex-row flex-wrap justify-start items-center"
         >
-          <h4 className="mb-10 font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
+          <h4 className="mb-10 w-full text-center sm:text-left  font-bold text-2xl sm:text-3xl xl:text-4xl text-primary-50">
             {dictionary.page_about.sections.teams.title}
           </h4>
           <div
