@@ -7,8 +7,10 @@ import { capitalizeFirstLetter } from '@/utils/common'
 import Tooltip from './Tooltip'
 
 export default function LocaleSwitcher({
+  dictionary,
   isScrollOnTop,
 }: {
+  dictionary: DictionaryType
   isScrollOnTop?: boolean
 }) {
   const router = useRouter()
@@ -38,7 +40,7 @@ export default function LocaleSwitcher({
 
   return (
     <Tooltip
-      title="Switch Language"
+      title={dictionary.actions.switch_locale}
       content={
         <div>
           {otherLocales.map((targetLocale, index) => (

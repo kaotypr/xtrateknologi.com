@@ -37,6 +37,9 @@
       "title": "Social Media"
     }
   },
+  "actions": {
+    "switch_locale": "Switch Language"
+  },
   "page_index": {
     "sections": {
       "founder": {

@@ -36,7 +36,7 @@ export default function Header({ dictionary }: { dictionary: DictionaryType }) {
         <Navigation dictionary={dictionary} isScrollOnTop={isScrollOnTop} />
       </div>
       <div className="grid grid-flow-col gap-4 h-14 justify-center items-center">
-        <LocaleSwitcher isScrollOnTop={isScrollOnTop} />
+        <LocaleSwitcher dictionary={dictionary} isScrollOnTop={isScrollOnTop} />
         <FiSearch
           className={`cursor-pointer w-7 h-7 ${
             isScrollOnTop
